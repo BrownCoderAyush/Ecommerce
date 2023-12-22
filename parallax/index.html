@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html{
+        box-sizing: border-box;
+    }
+    *,*::before,*::after{
+        box-sizing: inherit;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    .first-image{
+        background-image: url(henning-witzel-ukvgqriuOgo-unsplash.jpg);
+        min-height: 60vh;
+    }
+    .second-image{
+        background-image: url(jonathan-roger-LY1eyQMFeyo-unsplash.jpg);
+        min-height: 60vh;
+    }
+    .third-image{
+        background-image: url(pedro-lastra-Nyvq2juw4_o-unsplash.jpg);
+        min-height: 60vh;
+    }
+
+    .first-image, .second-image, .third-image, .fourth-image{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; 
+        opacity: 0.7;
+        background-attachment: fixed;
+    } 
+    section{
+        text-align: center;
+        padding: 3rem;  
+    }
+    .section-dark{
+        background-color: #282e34;
+    }
+    .section-light{
+        background-color: #f4f4f4;
+        color: #0f0f0f;
+    }
+    
+    .image{
+        position: relative;
+    }
+    .image > div{
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        letter-spacing: 8px;
+        text-transform: uppercase  ;
+    }
+    .first-image span{
+        background-color: black;
+        padding: 20px;
+        color: white;
+    }
+</style>
+<body>
+    <div class="image first-image">
+        <div><span>Planning the trip</span></div>
+    </div>
+    <section class="section-light">
+        <h2>Planning the trip</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt quidem doloribus at adipisci magnam porro, dolores deserunt minus esse corporis accusantium expedita repellendus nesciunt iste beatae ratione animi eligendi molestiae.</p>
+    </section>
+    <div class="image second-image">
+        <div><span>Packing the suitcase</span></div>
+    </div>
+    <section class="section-dark">
+        <h2>Packing the suitcase</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, voluptatum sequi. Magni soluta rem iusto vel asperiores veritatis, harum accusantium amet cum earum hic! Iusto amet magnam sint natus magni?</p>
+    </section>
+    <div class="image third-image">
+        <div><span>Getting Around</span></div>
+    </div>
+    <section class="section-light">
+        <h2>Getting Around</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, necessitatibus. Eos tenetur consequuntur harum! Provident inventore mollitia aliquam, possimus rerum dolorum, dignissimos dolor esse adipisci, tempore exercitationem aperiam asperiores ullam.</p>
+    </section>
+
+</body>
+</html>
